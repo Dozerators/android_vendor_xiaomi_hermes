@@ -2,7 +2,9 @@
 <mixercontrol>
     <versioncontrol value="1.01">
     </versioncontrol>
+    <!-- These are the initial mixer settings -->
     <kctl name="Audio_Speaker_class_Switch" value="CLASSAB" />
+  	<!--headphone output-->    
     <path name="headphone_output" value="turnon">
         <kctl name="Audio_Amp_R_Switch" value="On" />
         <kctl name="Audio_Amp_L_Switch" value="On" />
@@ -11,12 +13,14 @@
         <kctl name="Audio_Amp_R_Switch" value="Off" />
         <kctl name="Audio_Amp_L_Switch" value="Off" />      
     </path>
+    <!--receiver output-->    
     <path name="receiver_output" value="turnon">
         <kctl name="Voice_Amp_Switch" value="On" />
     </path>
     <path name="receiver_output" value="turnoff">
         <kctl name="Voice_Amp_Switch" value="Off" />
     </path>
+   <!-- 2-in-1 speaker output-->        
     <path name="two_in_one_speaker_output" value="turnon">        
         <kctl name="Audio_Speaker_class_Switch" value="RECEIVER" />
         <kctl name="Speaker_Amp_Switch" value="On" />        
@@ -25,24 +29,28 @@
         <kctl name="Speaker_Amp_Switch" value="Off" />
         <kctl name="Audio_Speaker_class_Switch" value="CLASSAB" />        
     </path>
+   <!--speaker output-->
     <path name="speaker_output" value="turnon">
         <kctl name="Speaker_Amp_Switch" value="On" />
     </path>
     <path name="speaker_output" value="turnoff">
         <kctl name="Speaker_Amp_Switch" value="Off" />
     </path> 
+    <!--headhpone_speaker output-->    
     <path name="headphoneSpeaker_output" value="turnon">
         <kctl name="Headset_Speaker_Amp_Switch" value="On" />
     </path>
     <path name="headphoneSpeaker_output" value="turnoff">
         <kctl name="Headset_Speaker_Amp_Switch" value="Off" />
     </path>
+    <!--external_speaker output-->    
     <path name="ext_speaker_output" value="turnon">
         <kctl name="Ext_Speaker_Amp_Switch" value="On" />
     </path>
     <path name="ext_speaker_output" value="turnoff">
         <kctl name="Ext_Speaker_Amp_Switch" value="Off" />
     </path>    
+    <!--mic setting-->  
     <path name="builtin_Mic_Mic1" value="turnon">
         <kctl name="Audio_ADC_1_Switch" value="On" />    
         <kctl name="Audio_Preamp1_Switch" value="IN_ADC1" />
@@ -125,6 +133,7 @@
     <path name="sidetone_switch" value="turnoff">
         <kctl name="Audio_Sidetone_Switch" value="Off" />
     </path>        
+   <!--mic1 type setting-->    
     <path name="Mic1TypeACCMode" value="setting">
         <kctl name="Audio_MIC1_Mode_Select" value="ACCMODE" />>
     </path>
@@ -140,6 +149,7 @@
     <path name="Mic1TypeDCCECMSINGLEMode" value="setting">
         <kctl name="Audio_MIC1_Mode_Select" value="DCCECMSINGLEMODE" />>
     </path>
+   <!--mic2 type setting-->    
     <path name="Mic2TypeACCMode" value="setting">
         <kctl name="Audio_MIC2_Mode_Select" value="ACCMODE" />>
     </path>
@@ -155,6 +165,7 @@
     <path name="Mic2TypeDCCECMSINGLEMode" value="setting">
         <kctl name="Audio_MIC2_Mode_Select" value="DCCECMSINGLEMODE" />>
     </path>
+   <!--mic3 type setting--> 
     <path name="Mic3TypeACCMode" value="setting">
         <kctl name="Audio_MIC3_Mode_Select" value="ACCMODE" />>
     </path>
@@ -170,6 +181,7 @@
     <path name="Mic3TypeDCCECMSINGLEMode" value="setting">
         <kctl name="Audio_MIC3_Mode_Select" value="DCCECMSINGLEMODE" />>
     </path>
+   <!--mic4 type setting-->    
     <path name="Mic4TypeACCMode" value="setting">
         <kctl name="Audio_MIC4_Mode_Select" value="ACCMODE" />>
     </path>
@@ -186,8 +198,8 @@
         <kctl name="Audio_MIC4_Mode_Select" value="DCCECMSINGLEMODE" />>
     </path>
     <path name="Mic_Setting_Inverse" value="setting">
-        <kctl name="Audio_MicSource1_Setting" value="ADC2" />>
-        <kctl name="Audio_MicSource2_Setting" value="ADC1" />>        
+        <kctl name="Audio_MicSource1_Setting" value="ADC1" />>
+        <kctl name="Audio_MicSource2_Setting" value="ADC2" />>        
     </path>
     <path name="Mic_Setting_NoInverse" value="setting">
         <kctl name="Audio_MicSource1_Setting" value="ADC1" />>
